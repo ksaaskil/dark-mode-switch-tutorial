@@ -4,6 +4,7 @@
   {
     "name": "build-sass",
     "expression": ["anyof", ["match", "*.scss", "wholename"]],
+    "stderr": ">>watchman-error.log",
     "command": ["bash", "build-sass.sh"]
   }
 ]

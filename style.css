@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
-
 /*
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 Custom properties (sometimes referred to as CSS variables or cascading variables) are entities defined by CSS authors that contain specific values to be reused throughout a document. They are set using custom property notation (e.g., --main-color: black;) and are accessed using the var() function (e.g., color: var(--main-color);)
@@ -26,7 +25,7 @@ Custom properties (sometimes referred to as CSS variables or cascading variables
 
 /* Dark mode variables */
 /* References a data attribute called "data-theme" with value "dark" */
-[data-theme="dark"] {
+[data-theme=dark] {
   --primary-color: #BA00FF;
   --secondary-color: #E399FF;
   --font-color: #F8E6FF;
@@ -37,12 +36,12 @@ Custom properties (sometimes referred to as CSS variables or cascading variables
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
 }
+.theme-switch-wrapper em {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
 .theme-switch {
   display: inline-block;
   height: 34px;
@@ -117,11 +116,10 @@ a {
   text-decoration: none;
   border-bottom: 3px solid transparent;
   font-weight: bold;
-  &:hover,
-  &:focus {
-    border-bottom: 3px solid currentColor;
-  }
   color: var(--primary-color);
+}
+a:hover, a:focus {
+  border-bottom: 3px solid currentColor;
 }
 
 section {
@@ -141,3 +139,5 @@ nav {
   justify-content: flex-end;
   padding: 20px 0;
 }
+
+/*# sourceMappingURL=style.css.map */
