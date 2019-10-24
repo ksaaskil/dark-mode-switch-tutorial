@@ -1,0 +1,9 @@
+[
+  "trigger",
+  ".",
+  {
+    "name": "build-sass",
+    "expression": ["anyof", ["match", "*.scss", "wholename"]],
+    "command": ["bash", "build-sass.sh"]
+  }
+]
